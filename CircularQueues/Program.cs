@@ -165,7 +165,7 @@ namespace CircularQueues
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Check your");
+                    Console.WriteLine("Check your project");
                 }
             }
         }
