@@ -27,7 +27,28 @@ namespace CircularQueues
                 Console.WriteLine("\nQueue overflow\n");
                 return;
             }
+            /*this following statement checks whether the queue is empty. if the queue is empty
+             * , then the value of the  RWAR and FRONT variables is set to 0 */
+            if ((FRONT == -1))
+            {
+                FRONT = 0;
+                REAR = 0;
+            }
+            else
+            {
+                /* if REAR is at the last position of the array, than the value of 
+                 * REAR is set to 0 that corresponds to the first position of the array. */
+                if (REAR == max - 1)
+                    REAR = 0;
+                else
+                    /*If REAR is not at the last position , then its values is increamented by one*/
+                    REAR = REAR + 1;
+            }
+            /* Once the position of REAR is determind, the element is added at its proper place. */
+            queue_array[REAR] = element;
         }
+
+
         
 
     }
